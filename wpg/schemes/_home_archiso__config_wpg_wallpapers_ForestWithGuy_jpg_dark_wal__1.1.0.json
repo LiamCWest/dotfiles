@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/archiso/.config/wpg/wallpapers/ForestWithGuy.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010101",
+        "foreground": "#caca95",
+        "cursor": "#caca95"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#6d9c48",
+        "color2": "#387d4a",
+        "color3": "#91b64d",
+        "color4": "#1e5831",
+        "color5": "#91b64d",
+        "color6": "#226639",
+        "color7": "#a7c272",
+        "color8": "#101010",
+        "color9": "#8ecf4d",
+        "color10": "#3db55e",
+        "color11": "#bccf4b",
+        "color12": "#20803e",
+        "color13": "#bccf4b",
+        "color14": "#259349",
+        "color15": "#caca95"
+    }
+}

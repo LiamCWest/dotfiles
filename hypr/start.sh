@@ -6,4 +6,5 @@ lxpolkit &
 waybar &
 ~/.config/hypr/scripts/sleep.sh &
 # eww open bar &
-prime-offload
+prime-offload &
+~/.config/wpg/wp_init.sh &

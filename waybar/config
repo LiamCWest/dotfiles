@@ -23,7 +23,6 @@
         "2": [],
         "3": [],
         "4": [],
-        "5": []
       },
       "active-only": false,
       "format": "{icon}",
@@ -43,7 +42,7 @@
       },
       "format": "{capacity}% {icon}",
       "format-icons": ["", "", "", "", ""],
-      "max-length": 30,
+      "max-length": 35,
     },
     "memory": {
       "format": "󰍛 {}%",
@@ -126,26 +125,38 @@
     },
   },
   {
-    "height": 38,
+    "height": 10,
     "name": "bottom",
     "position": "bottom",
-    "layer": "bottom",
+    "layer": "top",
     "margin": "0px 0px 0px 0px",
-    // "mode": "overlay",
-    "modules-center": ["group/launcher"],
+    "exclusive": false,
+    "modules-center": ["group/bottomBar"],
+    "group/bottomBar": {
+	"orientation": "vertical",
+	"drawer": {
+            "transition-duration": 500,
+            "children-class": "hidden",
+            "transition-left-to-right": false,
+    	},
+	"modules": [
+	    "custom/hover",
+	    "group/launcher",
+	]
+    },
     "group/launcher": {
     	"orientation": "inherit",
-	"drawer": {
-	    "transition-duration": 500,
-	    "children-class": "hidden",
-	    "transition-left-to-right": false,
-	},
 	"modules": [
 	    "custom/launcher",
 	    "custom/browser",
 	    "custom/terminal",
+	    "custom/discord",
 	    "custom/files",
 	]
+    },
+    "custom/hover": {
+      "format": "_________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+      "tooltip": false,
     },
     "custom/browser": {
       "format": "",
@@ -166,7 +177,12 @@
         "format":"",
         "on-click": "exec wofi --show drun",
         "tooltip": "Apps",
-  },
+    },
+    "custom/discord": {
+        "format": "󰙯",
+	"on-click": "exec discord",
+	"tooltip": "Discord",
+    },
   },
 
 ]

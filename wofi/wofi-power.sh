@@ -6,7 +6,7 @@ selected=$(echo -e $entries|wofi --hide-search true --width 250 --height 210 --d
 
 case $selected in
   logout)
-    hyprctl dispatch exit;;
+    exec hyprctl dispatch exit;;
   suspend)
     exec systemctl suspend;;
   reboot)
